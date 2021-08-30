@@ -1,5 +1,6 @@
 <?php
 
+//exemplo de como criar metodos construtores 
 class Endereco {
 
     private $logradouro;
@@ -32,7 +33,7 @@ $meuEndereco = new Endereco("Rua Nossa Senhora de Guadalupe", "260", "São Berna
 /*
 var_dump($meuEndereco);
 
-unset($meuEndereco);
+unset($meuEndereco); // limpa da memorias as variaveis
 */
 
 echo $meuEndereco;
