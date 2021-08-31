@@ -7,7 +7,7 @@ namespace Cliente;
     {
         public function registrarVenda() 
         {
-            echo "Exemplo que foi registrado uma venda para o cliente ". $this->getNome();
+            echo "Exemplo de que foi registrado uma venda para o cliente ". $this->getNome();
         }
     }
 
