@@ -33,7 +33,7 @@ $meuEndereco = new Endereco("Rua Nossa Senhora de Guadalupe", "260", "São Berna
 /*
 var_dump($meuEndereco);
 
-unset($meuEndereco); // limpa da memorias as variaveis
+unset($meuEndereco); //
 */
 
 echo $meuEndereco;
