@@ -1,6 +1,6 @@
 <?php 
 //tipo do banco com todos os seus parametros
-  $conn = new PDO("mysql:dbname=dbphp7;host=localhost", "root", "root");
+  $conn = new PDO("mysql:dbname=dbphp7;host=localhost", "root", "");
 
   $stmt =$conn->prepare("SELECT * FROM tb_usuarios ORDER BY deslogin");
   $stmt->execute(); //mandamos a consulta pro banco
