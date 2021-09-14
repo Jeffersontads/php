@@ -86,7 +86,7 @@ class Usuario {
     return $this;
   }
 
-  //retorna o usuario dquele id especifico
+  //RETORNA UM USUÁRIO DO ID ESPECIFICO
   public function loadById($id) {
     $sql = new Sql();
 
@@ -99,14 +99,14 @@ class Usuario {
     }
   }
 
-  //lista para trazer todos os user da tabela
+  //LISTA PARA TRAZER TODOS OS USUARIO DA TABELA
   public static function getList() { 
     $sql = new Sql();
 
     return $sql->select("SELECT * FROM tb_usuarios ORDER BY  deslogin");
   }
 
-  //buscar usuario
+  //FUNÇÃO PARA BUSCAR USUARIO
   public static function search() {
     $sql = new Sql();
 
@@ -140,6 +140,7 @@ class Usuario {
       $this->setDtcadastro(new DateTime ($data['dtcadastro']));
   }
 
+  //FUNÇÃO PARA INSERIR
   public function insert() {
     $sql = new Sql();
 
@@ -171,6 +172,7 @@ class Usuario {
     ));
     }
 
+    //FUNÇÃO DELETE
     public function delete(){
       $sql = new Sql();
       $sql->query("DELETE FROM tb_usuarios WHERE idusuario =:ID", array(
